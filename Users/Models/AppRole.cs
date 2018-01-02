@@ -4,10 +4,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Users.Infrastructure
+namespace Users.Models
 {
     public class AppRole : IdentityRole
     {
-        public int MyProperty { get; set; }
+        public AppRole(): base() { }
+
+        public AppRole(string name): base(name)
+        {
+
+        }
     }
 }
